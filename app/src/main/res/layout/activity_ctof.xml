@@ -1,0 +1,132 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/title"
+        android:text="@string/title_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:textSize="20sp"
+        android:gravity="center_horizontal" />
+
+    <!-- the separator line -->
+
+    <View
+        android:id="@+id/separatorLine1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/title"
+        android:background="@android:color/black"
+        android:paddingTop="30dp"
+        android:padding="5dp" />
+
+    <TextView
+        android:id="@+id/result_TextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/separatorLine1"
+        android:text="@string/result_label"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:textSize="70sp"
+        android:textAlignment="center"
+        android:gravity="center_horizontal" />
+
+    <!-- the separator line -->
+
+    <View
+        android:id="@+id/separatorLine2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/result_TextView"
+        android:background="@android:color/black"
+        android:paddingTop="20dp"
+        android:padding="5dp" />
+
+    <RadioGroup
+        android:id="@+id/cfRadioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/separatorLine2"
+        android:padding="20dp" >
+
+        <RadioButton
+            android:id="@+id/cRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/c" />
+
+        <RadioButton
+            android:id="@+id/fRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:text="@string/f" />
+
+    </RadioGroup>
+
+    <!-- the separator line -->
+
+    <View
+        android:id="@+id/separatorLine3"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/cfRadioGroup"
+        android:background="@android:color/black"
+        android:paddingBottom="30dp"
+        android:padding="5dp" />
+
+    <TextView
+        android:id="@+id/percentLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@+id/cfRadioGroup"
+        android:padding="10dp"
+        android:paddingTop="40dp"
+        android:text="@string/temp_percent_label"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/percentTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/percentLabel"
+        android:layout_toRightOf="@+id/percentLabel"
+        android:paddingTop="40dp"
+        android:padding="5dp"
+        android:text="@string/temp_percent"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/degreeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/percentLabel"
+        android:layout_toRightOf="@+id/percentTextView"
+        android:text="@string/degree_label"
+        android:paddingTop="30dp"
+        android:textSize="20sp" />
+
+    <SeekBar
+        android:id="@+id/percentSeekBar"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/cfRadioGroup"
+        android:max="200"
+        android:paddingLeft="10dp"
+        android:paddingTop="25dp"
+        android:progress="70" />
+
+
+</RelativeLayout>
+

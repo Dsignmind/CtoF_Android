@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">CtoF</string>
+    <string name="title_label">CtoFConverter</string>
+    <string name="result_label">Result</string>
+    <string name="c">C°</string>
+    <string name="f">F°</string>
+    <string name="temp_percent_label">Temp</string>
+    <string name="degree_label">°</string>
+    <string name="temp_percent">70</string>
+    <string name="action_settings">Settings</string>
+</resources>
